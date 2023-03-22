@@ -18,19 +18,11 @@ jobs:
             Hello! Thank you for filing an issue.
 
             If this is a bug report, please include relevant logs to help us debug the problem.
-          pr-message: |
+          pr-opened-message: |
             Hello! Thank you for your contribution.
             
             If you are fixing a bug, please reference the issue number in the description.
 
             If you are implementing a feature request, please check with the maintainers that the feature will be accepted first.
-  if_merged:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: kartben/first-interaction@v1.1.2-fork
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-message: |
+          pr-merged-message: |
             Hello! Thank you for first merged PR.
