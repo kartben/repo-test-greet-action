@@ -15,7 +15,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
-            Hello @${{github.event.comment.user.login}}! Thank you for filing an issue.
+            Hello @${{github.event.issue.user.login}}! Thank you for filing an issue.
 
             If this is a bug report, please include relevant logs to help us debug the problem.
           pr-opened-message: |
