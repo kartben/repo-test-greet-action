@@ -15,17 +15,17 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
-            Hello! Thank you for filing an issue.
+            Hello ${{github.event.comment.user.login}}! Thank you for filing an issue.
 
             If this is a bug report, please include relevant logs to help us debug the problem.
           pr-opened-message: |
-            Hello! Thank you for your contribution.
+            Hello ${{ github.event.pull_request.user.login }}! Thank you for your contribution.
             
             If you are fixing a bug, please reference the issue number in the description.
 
             If you are implementing a feature request, please check with the maintainers that the feature will be accepted first.
           pr-merged-message: |
-            🎉🥳 Hi @{{ author }}! Congratulations on getting your very first Zephyr pull request merged.
+            🎉🥳 Hi ${{ github.event.pull_request.user.login }}! Congratulations on getting your very first Zephyr pull request merged.
             This is a fantastic achievement, and we're thrilled to have you as part of our community!
             
             To celebrate this milestone and showcase your contribution, we'd love to award you the Zephyr Technical Contributor badge.
