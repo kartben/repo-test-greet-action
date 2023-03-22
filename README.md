@@ -1,3 +1,3 @@
 # repo-test-greet-action
 
-xxxx
+xxxxxx
