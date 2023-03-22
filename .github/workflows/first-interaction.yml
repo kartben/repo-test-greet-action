@@ -24,5 +24,11 @@ jobs:
             If you are fixing a bug, please reference the issue number in the description.
 
             If you are implementing a feature request, please check with the maintainers that the feature will be accepted first.
-          pr-merged-message: |
-            Hello! Thank you for first merged PR.
+          pr-merged-message: >
+            🎉🥳 Congratulations on getting your very first Zephyr pull request merged!
+            This is a fantastic achievement, and we're thrilled to have you as part of our community!
+            
+            To celebrate this milestone and showcase your contribution, we'd love to award you the Zephyr Technical Contributor badge.
+            If you're interested, please claim your badge by filling out this form: [Claim Your Zephyr Badge](https://forms.gle/oCw9iAPLhUsHTapc8).
+            
+            Thank you for your valuable input, and we look forward to seeing more of your contributions in the future! 🪁
