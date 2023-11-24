@@ -9,7 +9,7 @@ on:
 jobs:
   check_for_first_interaction:
     runs-on: ubuntu-latest steps:
-      - uses: actions/checkout@v3 - uses: kartben/first-interaction@v1.1.2-fork
+      - uses: kartben/first-interaction@run_on_node_not_docker
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
