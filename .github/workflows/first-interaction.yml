@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - uses: kartben/first-interaction@run_on_node_not_docker
+      - uses: zephyrproject-rtos/action-first-interaction@v1.1.1-zephyr-4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
